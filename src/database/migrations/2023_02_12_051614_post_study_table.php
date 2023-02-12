@@ -13,7 +13,12 @@ class PostStudyTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('post_study', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->integer('post_id');
+            $table->integer('study_id');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class PostStudyTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('post_study');
     }
 }

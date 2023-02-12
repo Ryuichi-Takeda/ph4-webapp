@@ -15,6 +15,9 @@ class CreateStudiesTable extends Migration
     {
         Schema::create('studies', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('study');
+            $table->string('color');
+            $table->string('language_or_content');
             $table->timestamps();
         });
     }
@@ -29,3 +32,4 @@ class CreateStudiesTable extends Migration
         Schema::dropIfExists('studies');
     }
 }
+
