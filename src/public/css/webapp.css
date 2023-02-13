@@ -1,0 +1,438 @@
+body {
+    /* background-color: #245,245,248; */
+    background-color: #245, 245, 248;
+}
+
+/*==========================================================================
+# header
+========================================================================== */
+
+header {
+    height: 64px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+}
+
+.posseLogo {
+    height: 64px;
+}
+
+.header_inner {
+    display: flex;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+}
+
+.report_and_posting {
+    background: linear-gradient(90deg, #1d62f0, #05fbff);
+    border-radius: 20px;
+    vertical-align: middle;
+    float: right;
+    display: flex;
+    width: 200px;
+    margin-right: 2.5%;
+    height: 40px;
+    text-align: center;
+}
+
+.report_and_posting_text {
+    margin: 3% 0 0 0;
+}
+
+/*==========================================================================
+# graph
+========================================================================== */
+.graphs {
+    display: flex;
+    padding-top: 64px;
+    width: auto;
+}
+
+/*==========================================================================
+  # left
+  ========================================================================== */
+
+.graphs_left {
+    height: 450px;
+    width: 50%;
+}
+
+.study_hour {
+    height: 30%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10px;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.study_hour_card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 255, 0.15); */
+    height: 100%;
+    background-color: white;
+    width: 33.33%;
+    border-radius: 10px;
+    text-align: center;
+
+    padding: 6% 0 0 0;
+    /* flex:0 1 auto; */
+}
+
+.study_hour_graph {
+    margin-top: 20px;
+    height: 65%;
+    padding-left: 10%;
+    padding-right: 10px;
+}
+.study_hour_graph_card {
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.bar_chart {
+    padding-bottom: 0px;
+}
+/*==========================================================================
+  # right
+  ========================================================================== */
+.graphs_right {
+    height: 450px;
+    display: flex;
+    width: 50%;
+}
+
+.πchart {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10%;
+}
+
+.πchart_card {
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.πchart_card_title {
+    padding: 20px;
+    text-align: center;
+}
+
+.study_languages_graph_image {
+    width: 100%;
+}
+
+.study_contents_graph_image {
+    width: 100%;
+}
+
+.doughnut_chart {
+    width: 100%;
+    height: 100%;
+}
+
+.date {
+    text-align: center;
+}
+
+/*==========================================================================
+# modal
+========================================================================== */
+
+.modal-open a {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+.modal {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 15%;
+}
+.modal:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.modal-wrapper {
+    top: 50%;
+    left: 50%;
+    height: 70%;
+    width: 900px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    text-decoration: none;
+    top: 0%;
+    right: 0%;
+    margin: 20px 20px 0 0;
+}
+.modal_left {
+    width: 50%;
+}
+.modal_right {
+    width: 50%;
+}
+
+.study_day_record {
+    width: 374px;
+    height: 40px;
+    background-color: rgb(245, 245, 248);
+    margin-left: 56px;
+    margin-right: 20px;
+    z-index: 10;
+}
+
+.study_hour_record {
+    width: 374px;
+    height: 40px;
+    background-color: rgb(245, 245, 248);
+    margin-right: 56px;
+    margin-left: 20px;
+    z-index: 10;
+}
+
+.Twitter_comment_space {
+    height: 60px;
+    width: 374px;
+    margin-right: 56px;
+    margin-left: 20px;
+    background-color: gray;
+}
+
+.report_and_posting_text_modal {
+    border-radius: 20px;
+    vertical-align: middle;
+    float: right;
+    background-color: orchid;
+    width: 200px;
+    margin-right: 2.5%;
+    height: 40px;
+    text-align: center;
+}
+
+h1 {
+    height: 15%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+}
+
+.none {
+    display: none;
+}
+
+/*==========================================================================
+# checkbox
+========================================================================== */
+
+.circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(204, 204, 204);
+    display: inline-block;
+    float: left;
+}
+
+.checkbottun {
+    z-index: 100;
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 6px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
+    top: 20%;
+    left: 20%;
+    float: left;
+}
+
+.blue {
+    background-color: rgb(15, 113, 189);
+}
+
+.checkbottun_text {
+    display: inline-block;
+}
+
+.study_content_check_box {
+    display: inline-block;
+    background-color: rgb(245, 245, 248);
+    margin: 1%;
+}
+.study_language_check_box {
+    margin: 8px 5px 0px 0;
+    display: inline-block;
+    background-color: rgb(245, 245, 248);
+}
+
+.study_content_check_container {
+    padding: 0 20px 0 56px;
+}
+
+.study_language_check_container {
+    padding: 0 20px 0 56px;
+}
+
+.Tweet_check_container {
+    padding-left: 20px;
+}
+
+.textarea {
+    width: 100%;
+    background-color: rgb(245, 245, 248);
+}
+
+.text_area_container {
+    margin-left: 20px;
+    margin-right: 56px;
+}
+
+.report_and_posting2_container {
+    margin: 0 auto;
+}
+
+.report_and_posting2 {
+    background: linear-gradient(90deg, #1d62f0, #05fbff);
+    border-radius: 20px;
+    vertical-align: middle;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/*==========================================================================
+# loading
+========================================================================== */
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    margin: 2%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 29%;
+    min-width: 200px;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.loader-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 4px;
+    border-color: blue #00000010 #00000010;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*==========================================================================
+# done
+========================================================================== */
+.done_circle {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(197, 227, 96);
+    margin-bottom: 30px;
+}
+
+.awesome {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(197, 227, 96);
+    margin-bottom: 8px;
+}
+
+.done_checkbottun {
+    z-index: 100;
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 18px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
+    top: 20%;
+    left: 20%;
+    float: left;
+}
+
+.done_text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
