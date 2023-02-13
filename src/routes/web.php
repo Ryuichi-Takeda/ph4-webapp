@@ -14,3 +14,4 @@
 Route::get('/', function () {
     return view('webapp');
 });
+Route::get('webapp','StudyDataControllepr@index');
