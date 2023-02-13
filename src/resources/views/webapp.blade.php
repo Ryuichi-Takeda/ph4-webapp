@@ -53,7 +53,7 @@
             <div class="study_hour">
                 <div class="study_hour_card">
                     today
-                    <p></p>
+                    <p>{{$today_study_hours}}</p>
                     <p>hour</p>
                 </div>
                 <div class="study_hour_card">
