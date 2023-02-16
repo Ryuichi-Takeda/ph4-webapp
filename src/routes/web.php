@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('webapp');
 });
+Route::get('webapp','StudyDataController@index');
