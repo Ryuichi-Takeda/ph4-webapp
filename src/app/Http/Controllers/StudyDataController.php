@@ -16,11 +16,15 @@ class StudyDataController extends Controller
             ->whereDate('day', date('Y-m-d'))
             ->sum('hour');
 
-        $month_study_hours = Post::where('user_id',$user_id)
-        ->whereYear('day',date('Y'))
-        ->whereMonth('day',date('m'))
-        ->sum('hour');
+        // 今月の勉強時間
+        $month_study_hours = Post::where('user_id', $user_id)
+            ->whereYear('day', date('Y'))
+            ->whereMonth('day', date('m'))
+            ->sum('hour');
 
-        return view('webapp',compact('today_study_hours','month_study_hours'));
+        // 総学習時間
+        $total_study_hours = Post::where('user_id', $user_id)->sum('hour');
+
+        return view('webapp', compact('today_study_hours', 'month_study_hours', 'total_study_hours'));
     }
 }

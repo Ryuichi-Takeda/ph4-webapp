@@ -17,24 +17,24 @@
 
 <body>
     <!-- /.header ここから -->
-<header>
+    <header>
         <div class="header_inner">
             <img src="{{ asset('img/posseLogo.png') }}" alt="POSSE" class="posseLogo" />
             <div class="week_number">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><span class="caret"></span>
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><span class="caret"></span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href=""
+                        onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
                     </a>
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href=""
-                            onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
-                        </a>
-
-                        <form id="logout-form" action="" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </div>
+                    <form id="logout-form" action="" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
             </div>
             <nav class="header_text_container">
                 <div class="report_and_posting modal-open">
@@ -53,17 +53,17 @@
             <div class="study_hour">
                 <div class="study_hour_card">
                     today
-                    <p>{{$today_study_hours}}</p>
+                    <p>{{ $today_study_hours }}</p>
                     <p>hour</p>
                 </div>
                 <div class="study_hour_card">
                     month
-                    <p>{{$month_study_hours}}</p>
+                    <p>{{ $month_study_hours }}</p>
                     <p>hour</p>
                 </div>
                 <div class="study_hour_card">
                     total
-                    <p></p>
+                    <p>{{ $total_study_hours }}</p>
                     <p>hour</p>
                 </div>
             </div>
@@ -86,8 +86,7 @@
                                         ],
                                         datasets: [{
                                             label: "系列Ａ",
-                                            data: [1,1,1,1,2,3,4,5,6,7,8
-                                            ],
+                                            data: [1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8],
                                             backgroundColor: "rgba(0,112,184)",
                                             // borderColor: "rgb(0,112,184)",
                                             // borderWidth: 1
@@ -230,7 +229,7 @@
                                     "rgb(45,0,186)",
                                 ],
                                 data: [
-                                    3,4,5,7,3,2,4,5
+                                    3, 4, 5, 7, 3, 2, 4, 5
                                 ],
                             }, ],
                         },
@@ -315,7 +314,7 @@
                                             "rgb(8,205,250)",
                                         ],
                                         data: [
-                                            7,4,6,6
+                                            7, 4, 6, 6
                                         ],
                                     }, ],
                                 },
