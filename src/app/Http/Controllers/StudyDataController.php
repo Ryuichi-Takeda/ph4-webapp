@@ -15,6 +15,12 @@ class StudyDataController extends Controller
         $today_study_hours = Post::where('user_id', $user_id)
             ->whereDate('day', date('Y-m-d'))
             ->sum('hour');
-        return view('webapp',compact('today_study_hours'));
+
+        $month_study_hours = Post::where('user_id',$user_id)
+        ->whereYear('day',date('Y'))
+        ->whereMonth('day',date('m'))
+        ->sum('hour');
+
+        return view('webapp',compact('today_study_hours','month_study_hours'));
     }
 }

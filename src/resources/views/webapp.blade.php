@@ -58,7 +58,7 @@
                 </div>
                 <div class="study_hour_card">
                     month
-                    <p></p>
+                    <p>{{$month_study_hours}}</p>
                     <p>hour</p>
                 </div>
                 <div class="study_hour_card">
